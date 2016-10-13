@@ -33,11 +33,26 @@ $(function(){
              <h1>The Bakery</h1>
              <a href="#" class="ui-btn-right">Nav</a>
      </div>
-       
-       
-<!--the first page of the app-->       
+    
+<!--the menu page of the app-->       
          
         <section class="page" id="page1" data-role="page">
+            
+            </div>
+        
+        <ul id="mainmenu" data-role="listview">
+            <li><a href="#page2">About</a></li>
+            <ul data-role="listview">
+                <li><a href="#">Non working link</a></li>
+            </ul>
+            <li><a href="#page3">Login</a></li>
+        </ul>
+            
+        </section>   
+       
+<!--the about page of the app-->       
+         
+        <section class="page" id="page2" data-role="page">
             
             </div>
         <h2>About</h2>
@@ -48,13 +63,13 @@ $(function(){
             Fruitcake wafer candy canes gummi bears cookie cheesecake.</p>
             
         
-            <a href="#page2">gotopage2</a>
+            <a href="#page3">gotopage3</a>
             
         </section>
      
-<!--the second page of the app-->
+<!--the login page of the app-->
      
-      <section class="page" id="page2" data-role="page">
+      <section class="page" id="page3" data-role="page">
           
      <h2>Login</h2>
             <p>Macaroon wafer halvah gingerbread. Sweet roll sweet biscuit macaroon brownie chocolate 
@@ -70,12 +85,11 @@ $(function(){
             
         </p>
             
-            <a href="#page1">gotopage1</a>
+            <a href="#page2">gotopage2</a>
       
       
         </section>
         <div data-role="footer" data-position="fixed" data-theme="a">This is the footer</div>
-<!--the third page of the app-->        
 
         </body>
         </html>
