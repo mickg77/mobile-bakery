@@ -64,3 +64,10 @@ h2,h3, figcaption{
     margin-top: 50px;
     
 }
+
+/*styling the left panel*/
+
+#left-panel {
+    background-color: #fff;
+    
+}

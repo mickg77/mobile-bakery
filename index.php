@@ -18,6 +18,8 @@ $(function(){
     $("[data-role='header'], [data-role='footer']").toolbar();
 });
 
+
+
 </script>
 
 
@@ -29,32 +31,52 @@ $(function(){
 <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     </head>
     <body>
+        
+              
        <div id="myhead" data-role="header" data-position="fixed" data-theme="a">
              <h1>The Bakery</h1>
-             <a href="#" class="ui-btn-right">Nav</a>
+             <a href="#left-panel" data-iconpos="notext" data-icon="bars" class="ui-btn-right">te</a>
      </div>
+    
+   
     
 <!--the menu page of the app-->       
          
+       
+         
         <section class="page" id="page1" data-role="page">
             
-            </div>
+          <!--the left panel-->
+    <div data-role="panel" id="left-panel" data-display="overlay">
+             
+    <a href="#home" class="ui-btn ui-corner-all ui-mini">Home</a>
+	<a href="#" class="ui-btn ui-corner-all ui-mini">About Us</a>
+	<a href="#" class="ui-btn ui-corner-all ui-mini">News</a>
+	<a href="#" class="ui-btn ui-corner-all ui-mini">Key Dates</a>
+	<a href="#" class="ui-btn ui-corner-all ui-mini">Calendar</a>
+	<a href="#" class="ui-btn ui-corner-all ui-mini">Contact</a>
+    </div>
+    <!--the end of the left panel-->
         
         <ul id="mainmenu" data-role="listview">
             <li><a href="#page2">About</a></li>
-            <ul data-role="listview">
-                <li><a href="#">Non working link</a></li>
-            </ul>
             <li><a href="#page3">Login</a></li>
         </ul>
+            <div data-role="collapsible">
+                <h1>I'm collapsible</h1>
+                <p>I'm the content inside the block</p>
+            </div>
             
+             <div data-role="collapsible" data-collapsed="false">
+                <h1>I'm collapsible but default to open</h1>
+                <p>I'm the content inside the block</p>
+            </div>
         </section>   
        
 <!--the about page of the app-->       
          
         <section class="page" id="page2" data-role="page">
-            
-            </div>
+           
         <h2>About</h2>
             
             <p>Tootsie roll sugar plum muffin sesame snaps ice cream sugar plum topping jelly-o. 
@@ -90,6 +112,7 @@ $(function(){
       
         </section>
         <div data-role="footer" data-position="fixed" data-theme="a">This is the footer</div>
-
+ 
+         
         </body>
         </html>
